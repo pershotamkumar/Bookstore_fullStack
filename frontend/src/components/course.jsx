@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {Link} from 'react-router-dom'
-import list from '../../public/list.json'
+import axios from 'axios'
 import Cards from './cards'
-const course = () => {
+import { set } from 'mongoose'
+//context 
+import { useContext } from "react";
+import { DataContext } from "../context/Createcontext";
+
+const Course = () => {
+
+  //context api use 
+  const {data} = useContext(DataContext)
+
+  
   return (
     <>
       <div className='max-w-screen-2xl container mx-auto md:px-20 px-8  '> 
@@ -18,7 +28,7 @@ const course = () => {
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-4" >
           {
-          list.map((item)=>( <Cards item={item} key={item.id}/>))
+          data.map((item)=>( <Cards item={item} key={item.id}/>))
           }
         </div>
       </div>
@@ -26,4 +36,4 @@ const course = () => {
   )
 }
 
-export default course
+export default Course

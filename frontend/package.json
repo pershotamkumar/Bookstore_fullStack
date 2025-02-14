@@ -11,13 +11,17 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
+    "axios": "^1.7.9",
     "daisyui": "^4.12.23",
+    "mongoose": "^8.10.0",
     "postcss": "^8.5.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.54.2",
+    "react-hot-toast": "^2.5.1",
     "react-router-dom": "^7.1.5",
     "react-slick": "^0.30.3",
+    "react-spinners": "^0.15.0",
     "router-dom": "^3.0.1",
     "slick-carousel": "^1.8.1",
     "tailwindcss": "^3.4.17"

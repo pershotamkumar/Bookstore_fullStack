@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Cards = ({ item }) => {
-  console.log(item)
+
   return (
     <>
       <div className="card bg-base-100 w-81 shadow-xl mt-4 mb-4 m-3 hover:scale-105 duration-300 dark:border-white  dark:bg-slate-900 dark:text-white" >

@@ -6,9 +6,21 @@ import "slick-carousel/slick/slick-theme.css";
 import Cards from './cards';
 import list from '../../public/list.json'
 
+//context 
+import { useContext } from 'react';
+import { DataContext } from '../context/Createcontext';
+
 const freebook = () => {
-  const filterdata = list.filter((data) =>  data.category === "free" )
-  console.log(filterdata)
+  const {data} = useContext(DataContext)
+  console.log(data)
+  let another ;
+  for(var i=1;i<=10;i++){
+   another
+  }
+
+
+  // const filterdata = list.filter((data) =>  data.category === "free" )
+  // console.log(filterdata)
   var settings = {
     dots: true,
     infinite: false,
@@ -53,7 +65,7 @@ const freebook = () => {
       
       <div className=''>
         <Slider {...settings} >
-          {filterdata.map((item)=>( <Cards item={item} key={item.id}/>))}
+          {data.map((item)=>( <Cards item={item} key={item.id}/>))}
        
         </Slider>
       </div>
