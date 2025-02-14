@@ -50,7 +50,7 @@ const Footer = () => {
     </div>
   </nav>
   <aside>
-    <p className='dark:bg-slate-900 dark:text-white'>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+    <p className='dark:bg-slate-900 dark:text-white'>Copyright © {new Date().getFullYear()} - All right reserved by pershotam Kumar</p>
   </aside>
 </footer>
       
